@@ -1,6 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 
-const SearchBox = ({ searchChange }) => {
+interface ISearchBox {
+  searchChange: React.ChangeEventHandler;
+}
+
+const SearchBox = ({ searchChange }: ISearchBox) => {
   return (
     <div className='pa2'>
       <input
